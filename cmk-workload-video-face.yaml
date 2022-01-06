@@ -12,7 +12,7 @@ spec:
   selector:
    matchLabels:
     app: cmk-workload2-pod
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
