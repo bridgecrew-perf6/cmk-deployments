@@ -11,15 +11,14 @@ metadata:
 spec:
   selector:
    matchLabels:
-    app: cmk-workload2-pod
+    app: cmk-workload1-pod
   replicas: 0
   template:
     metadata:
       labels:
-        app: cmk-workload2-pod
+        app: cmk-workload1-pod
     spec:
       serviceAccountName: cmk-serviceaccount
-      restartPolicy: Never
       containers:
       - name: cmk-isolate-exclusive-workload
         image: hrabhijith2/rpi-detection:motionx86
