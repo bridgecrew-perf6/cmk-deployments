@@ -25,6 +25,9 @@ spec:
         ports:
          - containerPort: 5000
            hostPort: 5000
+        env:
+        - name: CMK_NUM_CORES
+          value: 2
         imagePullPolicy: Always
         resources:
          requests:
