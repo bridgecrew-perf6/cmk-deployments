@@ -27,7 +27,7 @@ spec:
            hostPort: 5000
         env:
         - name: CMK_NUM_CORES
-          value: 2
+          value: "2"
         imagePullPolicy: Always
         resources:
          requests:
