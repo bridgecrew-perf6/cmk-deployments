@@ -34,6 +34,8 @@ spec:
         volumeMounts:
          - name: tmp
            mountPath: "/tmp"
+         - mountPath: "/localdisk/ahedlira/videos"
+           name: video
         securityContext:
          allowPrivilegeEscalation: true
          readOnlyRootFilesystem: true
@@ -46,3 +48,6 @@ spec:
       - hostPath:
          path: "/tmp"
         name: tmp
+      - hostPath:
+         path: "/localdisk/ahedlira/videos"
+        name: video
