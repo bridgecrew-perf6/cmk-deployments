@@ -12,7 +12,7 @@ spec:
   selector:
    matchLabels:
     app: cmk-workload1-pod
-  replicas: 0
+  replicas: 1
   template:
     metadata:
       labels:
@@ -59,3 +59,5 @@ spec:
       - name: tmp-unix
         hostPath:
          path: "/tmp/.X11-unix"
+      nodeSelector:
+       kubernetes.io/hostname: "katpk029"
