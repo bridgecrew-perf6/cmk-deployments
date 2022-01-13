@@ -26,6 +26,11 @@ spec:
         ports:
          - containerPort: 5003
            hostPort: 5003
+        env:
+        - name: http_proxy
+          value: ""
+        - name: https_proxy
+          value: ""
         volumeMounts:
          - name: tmp
            mountPath: "/tmp"
