@@ -20,7 +20,7 @@ spec:
     spec:
      serviceAccountName: cmk-serviceaccount
      containers:
-      - name: cmk-isolate-exclusive-workload7
+      - name: cmk-isolate-shared-workload7
         image: hrabhijith2/playhd:shared
         imagePullPolicy: Always
         ports:
