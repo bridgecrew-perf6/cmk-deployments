@@ -12,7 +12,7 @@ spec:
   selector:
    matchLabels:
     app: cmk-workload5-pod
-  replicas: 0
+  replicas: 1
   template:
     metadata:
       labels:
@@ -26,11 +26,6 @@ spec:
         ports:
          - containerPort: 5003
            hostPort: 5003
-        env:
-        - name: http_proxy
-          value: ""
-        - name: https_proxy
-          value: ""
         volumeMounts:
          - name: tmp
            mountPath: "/tmp"
