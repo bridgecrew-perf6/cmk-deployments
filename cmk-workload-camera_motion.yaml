@@ -26,7 +26,7 @@ spec:
         tty: true
         env:
         - name: DISPLAY
-          value: $DISPLAY
+          value: ":0"
         - name: QT_X11_NO_MITSHM
           value: "1"
         resources:
